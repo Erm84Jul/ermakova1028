@@ -1,0 +1,49 @@
+<form [formGroup]="studentItem">
+    <div class="row mt-2">
+        <div class="col-4 mb-3">
+            <input type="text" class="form-control" placeholder="Фамилия" formControlName="surname" name="Surname"
+                [ngClass]="{'has-error': studentItem.get('surname')?.invalid && studentItem.get('surname')?.touched}">
+            <small class="form-text text-muted">*Обязательное поле</small>
+        </div>
+        <div class="col-4  mb-3">
+            <input type="text" class="form-control" placeholder="Имя" formControlName="name" name="Name"
+                [ngClass]="{'has-error': studentItem.get('name')?.invalid && studentItem.get('name')?.touched}">
+            <small class="form-text text-muted">*Обязательное поле</small>
+        </div>
+        <div class="col-4  mb-3">
+            <input type="text" class="form-control" placeholder="Отчество" formControlName="middlename" name="Middlename"
+                [ngClass]="{'has-error': studentItem.get('middlename')?.invalid && studentItem.get('middlename')?.touched}">
+        </div>
+        <div class="col-6  mb-3">
+            <input type="text" class="form-control" placeholder="Телефон" formControlName="telephone" name="Telephone "
+                [ngClass]="{'has-error': studentItem.get('telephone')?.invalid && studentItem.get('telephone')?.touched}">
+            <small class="form-text text-muted">*Обязательное поле 8-XXX-XXX-XX-XX</small>
+        </div>
+        <div class="col-6  mb-3">
+            <input type="email" class="form-control" placeholder="email" formControlName="email" name="Email"
+                [ngClass]="{'has-error': studentItem.get('email')?.invalid && studentItem.get('email')?.touched}">
+            <small class="form-text text-muted">*Обязательное поле</small>
+        </div>
+        <div class="col-6  mb-3">
+            <input type="date" class="form-control" placeholder="Дата рождения" formControlName="birthday" name="Birthday"
+                [ngClass]="{'has-error': studentItem.get('birthday')?.invalid && studentItem.get('birthday')?.touched}">
+            <small class="form-text text-muted">*Обязательное поле</small>
+        </div>
+        <div class="col-6  mb-3">
+        </div>
+        <div class="col-6  mb-3">
+            <input type="text" class="form-control" placeholder="Номер группы" formControlName="group" name="Group"
+                [ngClass]="{'has-error': studentItem.get('group')?.invalid && studentItem.get('group')?.touched}">
+            <small class="form-text text-muted">*Обязательное поле XXX-XXX</small>
+        </div>
+        <div class="col-6  mb-3">
+            <input type="text" class="form-control" placeholder="Напрвление" formControlName="direction" name="Direction"
+                [ngClass]="{'has-error': studentItem.get('direction')?.invalid && studentItem.get('direction')?.touched}">
+            <small class="form-text text-muted">*</small>
+        </div>
+        <div class="col-2 btn-group my-2">
+            <button type="submit" class="btn btn-outline-success" [disabled]="studentItem.invalid" (click)="addStudent()">Сохранить</button>
+            <button type="button" class="btn btn-outline-danger " *ngIf="id" (click)="deleteStudent(student.id)">Х</button>
+        </div>
+    </div>
+</form>

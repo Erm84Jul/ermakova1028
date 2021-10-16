@@ -1,0 +1,59 @@
+{
+  "students": [
+    {
+      "surname": "Ермакова",
+      "name": "Юлия",
+      "middlename": "Андреевна",
+      "telephone": "89258357571 ",
+      "email": "ermakova.jul84@gmail.com",
+      "birthday": "2001-06-26",
+      "group": "191-323",
+      "direction": "САПР",
+      "id": 1
+    },
+    {
+      "surname": "xbxxb",
+      "name": "xbxb",
+      "middlename": "",
+      "telephone": "8754747474747",
+      "email": "xbbxbxbx@zzvzv",
+      "birthday": "2021-10-08",
+      "group": "191-324",
+      "direction": "Веб-разработка",
+      "id": 2
+    },
+    {
+      "surname": "a",
+      "name": "xbxb",
+      "middlename": "Андреевна",
+      "telephone": "89258357571",
+      "email": "ermakova.jul84@gmail.com",
+      "birthday": "2021-10-07",
+      "group": "201-321 ",
+      "direction": "САПР",
+      "id": 4
+    },
+    {
+      "surname": "Иванов",
+      "name": "Иван",
+      "middlename": "Иванович",
+      "telephone": "89258357571",
+      "email": "ermakova.jul84@gmail.com",
+      "birthday": "2021-10-05",
+      "group": "191-324",
+      "direction": "Веб-разработка",
+      "id": 5
+    },
+    {
+      "surname": "Мессси",
+      "name": "Алексей",
+      "middlename": "Гестальтович",
+      "telephone": "88005553535",
+      "email": "mess1@gest.al",
+      "birthday": "2019-03-21",
+      "group": "181-901",
+      "direction": "Веб-разработка",
+      "id": 6
+    }
+  ]
+}

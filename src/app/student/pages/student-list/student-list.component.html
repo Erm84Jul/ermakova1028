@@ -1,0 +1,36 @@
+
+<div>
+    </div>
+    <label for=""></label>
+
+    <div class="container">
+        <div class="row">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th [style.width]="'10%'">№ Группы</th>
+                        <th [style.width]="'50%'">ФИО</th>
+                        <th [style.width]="'30%'">Направление</th>
+                        <th [style.width]="'10%'">Направление</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let student of students" class="col-4">
+                        <th>{{student.group}}</th>
+                        <ng-container *ngIf="student.middlename == null; else elseTemplate">
+                            <td>{{student.surname}} {{student.name.substr(0, 1)}}</td>
+                        </ng-container>
+                        <ng-template #elseTemplate>
+                            <td>{{student.surname}} {{student.name.substr(0, 1)}} {{student.middlename.substr(0, 1)}}
+                            </td>
+                        </ng-template>
+                        <td>{{student.direction}}</td>
+                        <div>
+                            <button type="button" class="btn btn-outline-success"
+                                (click)="itemStudent(student.id)">Редактировать</button>
+                        </div>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
